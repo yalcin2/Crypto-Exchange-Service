@@ -1,0 +1,42 @@
+{
+  "name": "crypto-exchange-service",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "start:dev": "nodemon -L delay 2 ./bin/www ",
+    "test": "mocha --require @babel/register ./tests/** --timeout 5000"
+  },
+  "dependencies": {
+    "@babel/register": "^7.17.7",
+    "app-config": "^1.0.1",
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "chai": "^4.3.6",
+    "coingecko-api": "^1.0.10",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "fs": "^0.0.1-security",
+    "helmet": "^5.0.2",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "mocha": "^10.0.0",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.3.2",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.16",
+    "proxyquire": "^2.1.3",
+    "pusher": "^5.1.0-beta",
+    "pusher-client": "^1.1.0",
+    "pusher-js": "^7.1.0-beta",
+    "sinon": "^14.0.0",
+    "sinon-chai": "^3.7.0",
+    "supertest": "^6.2.3",
+    "ws": "^8.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.31"
+  }
+}
